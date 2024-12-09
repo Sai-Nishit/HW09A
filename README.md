@@ -1,60 +1,24 @@
-# p5.js Template
+# HW09A
 
-This is a README file that can be used to describe and document your assignment.
+## Concept
+Inspired by Piet Mondrian's Compositions in Red, Yellow, Blue, and Black, this remix dynamically transforms the iconic grid style into a glowing, animated neon aesthetic. The design evolves through user interaction, offering endless customization possibilities with adjustable colors, grid sizes, and animated patterns.
 
-Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)):
+## Design Process
 
----
----
+1. Research and Inspiration:
+   Studied Piet Mondrian's use of balance, contrast, and geometric forms.
+   Analyzed how modern neon effects can complement Mondrian's minimalist style.
 
-# Heading1
-## Heading2
-### Heading3
-#### Heading4
-##### Heading5
-###### Heading6
+2. Core Features:
 
-**bold text**
+  Animated Glow: Gradual color changes and semi-transparent layers create a pulsating neon effect.
+  Dynamic Shapes: Randomized rectangles, circles, and triangles add variety and depth.
+  User Interaction:
+    Color Customization: Users can select and adjust the color palette via interactive color pickers.
+    Grid Size Adjustment: A slider allows users to control the size of the grid in real time.
 
-*italicized text*
-
-~~strikethrough text~~
-
-Ordered List:
-1. First item
-2. Second item
-3. Third item
-
-Unordered List:
-- First item
-- Second item
-- Third item
-
-`short code block`
-
-```
-extended code block
-fun() {
-  return 0
-}
-```
-
-Link:  
-[linked text](https://www.example.com)
-
-
-Image with url:  
-![image description](https://dm-gy-6063-2024f-b.github.io/assets/homework/02/clark-espaco-modulado-00.jpg)
-
-
-Image on repo:  
-![image description](./file-name.jpg)
-
-
-To start a new line, add two spaces at the end of a line, like this:  
-this is a new line.
-
-
-To start a new paragraph, leave an empty line between two lines of text.
-
-This is a new paragraph.
+3. Technical Implementation:
+   
+  Used p5.js rect(), ellipse(), and triangle() functions to dynamically render shapes.
+  Incorporated noise() to animate colors and shapes smoothly.
+  Added DOM elements (createSlider(), createColorPicker()) for real-time interaction.
